@@ -1,3 +1,6 @@
-const mongoose = require('mongoose')
+const mongoose = require ('mongoose')
 
-mon
+var promise = mongoose.connect('mongodb://localhost/stack-me', {useMongoClient: true})
+
+mongoose.Promise = Promise
+module.exports = mongoose

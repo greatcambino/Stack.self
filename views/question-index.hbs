@@ -1,0 +1,9 @@
+{{#each questions as |question index|}}
+<h5>
+    <a href='/question/{{ question.topic }}'>{{ question.topic}}</a>
+</h5>
+
+<h3>
+    <a href='/question/{{ question.content }}'>{{ question.content }}</a>
+</h3>
+{{/each}}
