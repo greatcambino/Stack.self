@@ -3,7 +3,7 @@ var router          = express.Router()
 var usersController = require('../controllers/question')
 
 
-router.route('/question')
+router.route('/')
     .get(usersController.getAll)
 
 router.route('question/content')
