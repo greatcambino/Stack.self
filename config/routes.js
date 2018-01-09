@@ -13,7 +13,10 @@ router.route('/:_id')
 router.route('/')
     .post(usersController.post)
 
-router.route('/')
+router.route('/:_id')
     .delete(usersController.Delete)
+
+router.route('/topics')
+    .get(usersController.getAllTopics)
 
 module.exports = router

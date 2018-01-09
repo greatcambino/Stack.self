@@ -13,6 +13,15 @@ function getAll (req, res) {
         })
 }
 
+// Get all topics 
+function getAllTopics (req, res) {
+    QuestionDb
+    .find({})
+    .then((questions) => {
+            res.render('topics-index', { questions: questions })
+        })
+}
+
 // Get one question
 function getOneQuestion (req, res) {
     // let id = req.params._id
@@ -37,9 +46,9 @@ function post (req, res) {
 // Delete a question
 function Delete (req, res) {
     QuestionDb
-    .findOneAndRemove({ _id: request.params._id })
+    .findOneAndRemove({ _id: req.params._id })
     .then (() => {
-        res.redirect('/question-show')
+        res.redirect('/question')
     })
 
 }
@@ -48,6 +57,7 @@ function Delete (req, res) {
 module.exports = {
     router, 
     getAll: getAll, 
+    getAllTopics: getAllTopics,
     getOneQuestion: getOneQuestion, 
     post: post,
     Delete, Delete

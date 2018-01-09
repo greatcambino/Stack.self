@@ -1,0 +1,36 @@
+html {
+    min-height: 100%;
+  }
+
+main {
+    text-align: center;
+}
+
+
+h1 {
+    font-family: 'Open Sans-extra bold', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+    /* font-weight: 800; */
+}
+
+h2 {
+    font-family: 'Open Sans-extra bold', sans-serif;
+    font-size: 22px;
+}
+
+h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+}
+
+h7 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+}
+
+h8 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+}

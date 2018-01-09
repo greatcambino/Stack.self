@@ -1,6 +1,6 @@
 {{#if question}}
-<h2>{{question.content}}</h2>
-<h4>Topic: {{question.topic}}</h4>
+<h7>{{question.content}}</h7><br>
+<h8>Topic: {{question.topic}}</h8>
 {{else}}
 <h2>That question couldn't be found!</h2>
 {{/if}}
@@ -16,6 +16,6 @@
 </form>
 
 <h4>Delete a question</h4>
-<form action="/question/{{question.content}}?_method=delete" method="post">
+<form action="/question/{{question._id}}?_method=delete" method="post">
     <button type="submit">Delete</button>
 </form>
