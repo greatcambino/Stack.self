@@ -2,6 +2,7 @@ var express            = require('express')
 var mongoose           = require('mongoose')
 var hbs                = require('express-handlebars')
 var app                = express()
+var parser             = require('body-parser')
 const questions        = require('./config/routes')
 
 // mongoose.connect('mongodb://localhost/stack-me')
@@ -14,6 +15,7 @@ app.set('views', './views')
 // app.use(routes)
 
 app.use('/question', questions)
+
 
 app.get('/', (req, res) => {
     res.render('welcome')
