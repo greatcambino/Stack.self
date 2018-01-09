@@ -2,25 +2,25 @@
     {
       "username": "",
       "content": "What would people who know you say you're good at?",
-      "topic": "Career",
+      "topic": "career",
       "upvotes": ""
     },
     {
       "username": "",
-      "content": "Are you a great listener? Do you offer a good listening ear that is more focused upon the needs of others, as opposed to your own?",
-      "topic": "Relationships", 
+      "content": "Are you a good listener? Do you offer a listening ear that is more focused on the needs of others, as opposed to your own?",
+      "topic": "relationships", 
       "upvotes": ""
     },
     {
       "username": "",
       "content": "What can I do right now that my future self will thank me for?",
-      "topic": "Habits",
+      "topic": "habits",
       "upvotes": ""
     },
     {
       "username": "",
       "content": "What am I grateful for?",
-      "topic": "Values",
+      "topic": "values",
       "upvotes":""
     }
 ]

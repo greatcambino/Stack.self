@@ -1,15 +1,21 @@
-{{#if questions}}
-<h2>{{questions.content}}</h2>
-<h4>{{questions.topic}}</h4>
+{{#if question}}
+<h2>{{question.content}}</h2>
+<h4>Topic: {{question.topic}}</h4>
 {{else}}
 <h2>That question couldn't be found!</h2>
 {{/if}}
 
 
-<h2>{{question.topic}}</h2>
+{{!-- <h2>{{question.topic}}</h2> --}}
 
-{{!-- <h2>Add a new question</h2>
-<form action='/question/{{ question.name }}' method="patch">
-    <input type="text" name="questions[content]" placeholder="???">
-    <input type="submit" value="submit">
-</form> --}}
+<h4>Update Question</h4>
+<form action="/questions/{{question.topic}}?_method=put" method="post">
+    <input type="text" name="question[content]" value="{{question.topic}}">
+    <input type="text" name="question[topic]" value="{{question.topic}}">
+    <input type="submit" value="Update">
+</form>
+
+<h4>Delete a question</h4>
+<form action="/question/{{question.content}}?_method=delete" method="post">
+    <button type="submit">Delete</button>
+</form>

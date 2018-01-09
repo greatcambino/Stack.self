@@ -9,37 +9,46 @@ function getAll (req, res) {
     QuestionDb
     .find({})
     .then((questions) => {
-            res.render('question-index', {
-                questions: questions
-            })
+            res.render('question-index', { questions: questions })
         })
 }
 
 // Get one question
 function getOneQuestion (req, res) {
-    let content = req.params.content
-    QuestionDb.findOne({ content: content })
-        .then(questions => {
+    // let id = req.params._id
+    QuestionDb
+    .findOne({ _id: req.params._id })
+    .then(question => {
             res.render('question-show', { question: question })
         })
 }
 
-router.post('/', (req, res) => {
-    QuestionDb.create(req.body.questions)
+// Post a new question
+function post (req, res) {
+    console.log(req.body)
+    QuestionDb
+    .create(req.body)
     .then(question => {
-        res.redirect(`/question/${question.content}`)
+        // res.redirect(`/create/${question.content}`)
+        res.redirect('/question')
     })
-})
+}
 
-router.put('/:content', (req, res) => {
-    QuestionDb.findOneAndUpdate({ content: req.params.content }, req.body.question, { new: true })
-    .then(question => {
-        res.redirect(`/question/${question.content}`)
+// Delete a question
+function Delete (req, res) {
+    QuestionDb
+    .findOneAndRemove({ _id: request.params._id })
+    .then (() => {
+        res.redirect('/question-show')
     })
-})
+
+}
+
 
 module.exports = {
     router, 
     getAll: getAll, 
     getOneQuestion: getOneQuestion, 
+    post: post,
+    Delete, Delete
 }
