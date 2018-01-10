@@ -35,7 +35,7 @@ function getOneQuestion (req, res) {
 function post (req, res) {
     console.log(req.body)
     QuestionDb
-    .create(req.body)
+    .create(req.body.question)
     .then(question => {
         res.redirect('/question')
     })
