@@ -7,7 +7,7 @@ mongoose.Promise = Promise
 if (process.env.NODE_ENV == "production") {
     mongoose.connect(process.env.MLAB_URL)
   } else {
-    mongoose.connect("mongodb://localhost/stack-dot-self");
+    mongoose.connect("mongodb://localhost/stack-self");
   }
 
 module.exports = mongoose

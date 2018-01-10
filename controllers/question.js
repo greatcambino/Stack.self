@@ -22,10 +22,10 @@ function getAllTopics (req, res) {
         })
 }
 
-// Get one question
+// Update a question
 function getOneQuestion (req, res) {
     QuestionDb
-    .findOne({ _id: req.params._id })
+    .findOneAndUpdate({ _id: req.params._id })
     .then(question => {
             res.render('question-show', { question: question })
         })

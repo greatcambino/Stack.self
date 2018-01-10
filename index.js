@@ -22,6 +22,7 @@ app.use('/assets', express.static('public'))
 app.get('/', (req, res) => {
     res.render('welcome')
 })
+
 app.use('/question', questions)
 
 // app.listen(3000, () => {
