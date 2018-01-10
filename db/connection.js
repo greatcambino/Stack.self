@@ -2,7 +2,7 @@ const mongoose = require ('mongoose')
 
 mongoose.Promise = Promise
 
-mongoose.connect('mongodb://localhost/stack-self', {useMongoClient: true})
+// mongoose.connect('mongodb://localhost/stack-self', {useMongoClient: true})
 
 if (process.env.NODE_ENV == "production") {
     mongoose.connect(process.env.MLAB_URL)
