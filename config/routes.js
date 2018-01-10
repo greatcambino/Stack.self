@@ -11,6 +11,7 @@ router.route('/')
 // /':_id' --> assigns unique value; redirects to a page with a path based on a user's Get request 
 router.route('/:_id')
     .get(usersController.getOneQuestion)
+    .put(usersController.Put)
     .delete(usersController.Delete)
 
 router.route('/topics')

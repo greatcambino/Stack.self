@@ -22,13 +22,22 @@ function getAllTopics (req, res) {
         })
 }
 
-// Update a question
+// Get a question
 function getOneQuestion (req, res) {
     QuestionDb
-    .findOneAndUpdate({ _id: req.params._id })
-    .then(question => {
-            res.render('question-show', { question: question })
-        })
+    .findById({ _id: req.params._id })
+    .then((question) => {
+        res.render('question-show', { question: question })
+    })
+}
+
+// Update a question
+function Put (req, res) {
+    QuestionDb
+    .findOneAndUpdate({ _id: req.params._id }, req.body.question, {new: true})
+    .then((question) => {
+        res.render('question-show', { question: question })
+    })
 }
 
 // Post a new question
@@ -57,5 +66,6 @@ module.exports = {
     getAllTopics: getAllTopics,
     getOneQuestion: getOneQuestion, 
     post: post,
-    Delete, Delete
+    Delete: Delete,
+    Put: Put
 }
