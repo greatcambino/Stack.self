@@ -1,14 +1,34 @@
 html {
     min-height: 100%;
+    /* background-color: rgb(192, 171, 141);
+    color: white; */
   }
 
 main {
+    text-align: left;
+}
+
+.container2 {
+    width: 50%;
     text-align: center;
+    margin: 0 auto;
+}
+
+.container3 {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container4 {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
 h1 {
-    font-family: 'Open Sans-extra bold', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 100px;
     font-weight: 900;
     text-align: center;
@@ -16,21 +36,43 @@ h1 {
 }
 
 h2 {
-    font-family: 'Open Sans-extra bold', sans-serif;
-    font-size: 22px;
+    font-family: 'Roboto Mono One', monospace;
+    font-size: 26px;
+    font-weight: 800;
+    white-space: nowrap;
 }
 
 h3 {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+}
+
+h4 {
+    font-family: 'Roboto Mono One', monospace;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    white-space: nowrap;
 }
 
 h7 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 50px;
+    font-weight: 900;
 }
 
 h8 {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    /* padding: 325px; */
+    white-space: nowrap;
+}
+
+h9 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 26px;
+    font-weight: 800;
+    white-space: nowrap;
+    padding: 325px;
 }

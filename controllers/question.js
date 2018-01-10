@@ -24,7 +24,6 @@ function getAllTopics (req, res) {
 
 // Get one question
 function getOneQuestion (req, res) {
-    // let id = req.params._id
     QuestionDb
     .findOne({ _id: req.params._id })
     .then(question => {
@@ -38,7 +37,6 @@ function post (req, res) {
     QuestionDb
     .create(req.body)
     .then(question => {
-        // res.redirect(`/create/${question.content}`)
         res.redirect('/question')
     })
 }
@@ -50,7 +48,6 @@ function Delete (req, res) {
     .then (() => {
         res.redirect('/question')
     })
-
 }
 
 

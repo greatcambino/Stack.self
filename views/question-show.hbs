@@ -1,21 +1,30 @@
 {{#if question}}
-<h7>{{question.content}}</h7><br>
-<h8>Topic: {{question.topic}}</h8>
+<h8>[Topic: {{question.topic}}]</h8><br>
+<h7>{{question.content}}</h7>
 {{else}}
 <h2>That question couldn't be found!</h2>
 {{/if}}
 
-
-{{!-- <h2>{{question.topic}}</h2> --}}
-
-<h4>Update Question</h4>
+<div class="container3">
+<div class="card">
+<div class="card-content">
+<h4>Edit this question</h4>
 <form action="/questions/{{question.topic}}?_method=put" method="post">
     <input type="text" name="question[content]" value="{{question.topic}}">
     <input type="text" name="question[topic]" value="{{question.topic}}">
     <input type="submit" value="Update">
 </form>
+</div>
+</div>
+</div>
 
-<h4>Delete a question</h4>
+<div class="container4">
+<div class="card">
+<div class="card-content">
+<h4>Delete this question</h4>
 <form action="/question/{{question._id}}?_method=delete" method="post">
     <button type="submit">Delete</button>
 </form>
+</div>
+</div>
+</div>
