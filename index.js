@@ -17,12 +17,12 @@ app.set('views', './views')
 
 app.use(parser.urlencoded({extended: true}))
 app.use(methodOverride('_method'))
-app.use('/question', questions)
 app.use('/assets', express.static('public'))
 
 app.get('/', (req, res) => {
     res.render('welcome')
 })
+app.use('/question', questions)
 
 // app.listen(3000, () => {
 //     console.log('app listening on port 3000')
