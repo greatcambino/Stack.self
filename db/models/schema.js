@@ -1,10 +1,9 @@
 const mongoose    = require('../connection')
 
 const QuestionSchema = new mongoose.Schema ({
-    username: String,
     content: String, 
     topic: String, 
-    upvotes: Number // adding upvote functionality in next version!
+    upvotes: Number // upvote functionality coming soon!
 })
 
 

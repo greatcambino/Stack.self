@@ -1,6 +1,6 @@
 {{#if question}}
-<h8>[Topic: {{question.topic}}]</h8><br>
-<h7>"{{question.content}}"</h7>
+<div class="show-topic">[Topic: {{question.topic}}]</div><br>
+<div class="show-question">"{{question.content}}"</div>
 {{else}}
 <h2>That question couldn't be found!</h2>
 {{/if}}
@@ -8,7 +8,7 @@
 <div class="container3">
 <div class="card">
 <div class="card-content">
-<h4>Edit this question</h4>
+<h3 style="font-size:3vw">Edit this question</h3>
 <form action="/question/{{question._id}}?_method=put" method="post">
     <input type="text" name="question[content]" value="{{question.content}}">
     <input type="text" name="question[topic]" value="{{question.topic}}">
@@ -21,7 +21,7 @@
 <div class="container4">
 <div class="card">
 <div class="card-content">
-<h4>Delete this question</h4>
+<h3 style="font-size:3vw">Delete this question</h3>
 <form action="/question/{{question._id}}?_method=delete" method="post">
     <button type="submit">Delete</button>
 </form>

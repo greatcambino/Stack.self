@@ -1,14 +1,14 @@
 {{#each questions as |question index|}}
-<h3>
+<div class="library">
     [<a href='/question/topics'>{{ question.topic}}</a>]
     <a href='/question/{{ question._id }}'>{{ question.content }}</a>
-</h3>
+</div>
 {{/each}}
 
 <div class="container2">
 <div class="card">
 <div class="card-content">
-<h2>Add a new question</h2>
+<h3 style="font-size:3vw">Add a new question</h3>
 <form action="/question" method="post">
     <input type="text" name="question[content]" placeholder="???">
     <input type="text" name="question[topic]" placeholder="File this under...">
@@ -16,7 +16,5 @@
 </form>
 </div>
 </div>
-
-
 </div>
 
