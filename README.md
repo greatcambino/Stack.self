@@ -22,3 +22,5 @@ This app serves a library of open-ended questions for users to ask themselves. U
 # Features I'd like to add: 
 * Upvoting for individual questions 
 * A working "Topics-index" view where users can view a list of question topics
+
+<!-- Add Setup instructions here: git clone, npm install, etc -->
