@@ -1,13 +1,13 @@
 # Stack.self
-This app serves a library of open-ended questions for users to ask themselves. Users can read, add, update, and delete questions from the question index. 
+This app serves as a library of open-ended questions for users to ask themselves. This is a RESTful app 
 
-* GitHub link: 
+* GitHub link: https://github.com/greatcambino/Stack.self
 
-* Heroku link: 
+* Live link: https://stack-self.herokuapp.com/
 
 # Built with: 
-* Vanilla JavaScript 
-* CSS/HTML
+* JavaScript 
+* CSS3/HTML5
 * Materialize CSS 
 * Express 
 * MongoDB
