@@ -1,5 +1,5 @@
 # Stack.self
-This app serves as a library of open-ended questions for users to ask themselves. This is a RESTful app 
+This app serves as a library of open-ended questions for users to ask themselves. This is a full-stack application with full CRUD functionality.  
 
 * GitHub link: https://github.com/greatcambino/Stack.self
 
