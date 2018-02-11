@@ -7,7 +7,7 @@ main {
 }
 
 .container2 {
-    width: 50%;
+    width: 45%;
     text-align: center;
     margin: 0 auto;
 }
@@ -27,10 +27,9 @@ main {
 
 h1 {
     font-family: 'Rubik', sans-serif;
-    font-size: 100px;
+    font-size: 12vw;    
     font-weight: 900;
     text-align: center;
-    /* font-weight: 800; */
 }
 
 h2 {
@@ -38,7 +37,6 @@ h2 {
     font-size: 2vw;
     font-weight: 800;
     text-align: center;
-    /* white-space: nowrap; */
 }
 
 h3 {
@@ -49,17 +47,12 @@ h3 {
     white-space: nowrap;  
 }
 
-h9 {
+.welcome {
     font-family: 'Roboto Mono', monospace;
-    font-size: 26px;
     font-size: 3.8vw;
     font-weight: 800;
     white-space: nowrap;
-    padding: 220px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em
+    text-align: center !important;
 }
 
 .library {
