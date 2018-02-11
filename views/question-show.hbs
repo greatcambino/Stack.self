@@ -8,7 +8,7 @@
 <div class="container3">
 <div class="card">
 <div class="card-content">
-<h3 style="font-size:3vw">Edit this question</h3>
+<h3>Edit this question</h3>
 <form action="/question/{{question._id}}?_method=put" method="post">
     <input type="text" name="question[content]" value="{{question.content}}">
     <input type="text" name="question[topic]" value="{{question.topic}}">
@@ -21,7 +21,7 @@
 <div class="container4">
 <div class="card">
 <div class="card-content">
-<h3 style="font-size:3vw">Delete this question</h3>
+<h3>Delete this question</h3>
 <form action="/question/{{question._id}}?_method=delete" method="post">
     <button type="submit">Delete</button>
 </form>
